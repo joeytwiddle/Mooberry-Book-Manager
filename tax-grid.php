@@ -60,8 +60,7 @@ if ( isset( $wp_query->query_vars['the-taxonomy'] ) ) {
 }
 
 if ($taxonomy == '' || $term == '') {
-
-	return __('There was an error!', 'mooberry-book-manager');
+	return __('[Mooberry grid: Shortcode must provide term and taxonomy attributes, or URL must provide the-term and the-taxonomy query parameters.]', 'mooberry-book-manager');
 }
 
 $selection = str_replace('mbdb_', '', $taxonomy);
