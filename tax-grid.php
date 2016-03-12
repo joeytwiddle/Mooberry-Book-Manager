@@ -61,7 +61,7 @@ if ( isset( $wp_query->query_vars['the-taxonomy'] ) ) {
 
 if ($taxonomy == '' || $term == '') {
 
-	return __('There was an error!', 'mooberry-book-manager');
+	return __('Either taxonomy or term missing from shortcode.', 'mooberry-book-manager');
 }
 
 $selection = str_replace('mbdb_', '', $taxonomy);
